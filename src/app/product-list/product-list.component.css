@@ -1,0 +1,30 @@
+.wrap {
+    width: 99%;
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+}
+.product-item {
+    background-color: rgb(74, 188, 226);
+    width: 30%;
+    margin: 1%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.photo {
+    width: 90%;
+}
+.show-photo {
+    width: 50%;
+}
+.show {
+    position: absolute;
+    width: 50%;
+}

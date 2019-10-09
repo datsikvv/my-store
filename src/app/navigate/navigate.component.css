@@ -1,0 +1,16 @@
+nav {
+    background-color: green;
+    height: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: 8px;
+    width: 120px;
+}
+li {
+    list-style: none;
+}
+p {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 3px;
+}
