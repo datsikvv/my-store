@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+app-product-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body {
+    background-color: #d9d9db;
+}

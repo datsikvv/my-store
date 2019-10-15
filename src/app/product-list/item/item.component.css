@@ -1,0 +1,34 @@
+.wrap {
+    width: 100%;
+    background-color: #a6a6a6;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+h1 {
+    margin: 0, auto;
+}
+.product-item {
+    background-color: #7299d6;
+    width: 30%;
+    margin: 1%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.photo {
+    width: 90%;
+}
+.show-photo {
+    width: 50%;
+}
+.show {
+    position: absolute;
+    width: 50%;
+}
+button {
+    margin: 5px;
+}

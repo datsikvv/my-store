@@ -1,15 +1,16 @@
 .header {
     height: 100px;
-    background-color: #cccccc;
-    margin: -8px;
-    padding: 15px;
+    background-color: #f3f3f3;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .logo {
-    width: 75px;
+    width: 70px !important;
 }
 .header-logo-name {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bolder;
     margin-left: 50px;
 }
+

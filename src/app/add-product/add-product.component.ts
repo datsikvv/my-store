@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product-list/product-list.component'
+import { Product } from '../product-list/item/item.component';
+
 
 @Component({
   selector: 'app-add-product',
@@ -11,7 +12,8 @@ export class AddProductComponent implements OnInit {
   public newProduct:  Product = {
     name: '',
     price: 0,
-    photo: ''
+    photo: '',
+    description: ''
   };
 
 
@@ -19,8 +21,11 @@ export class AddProductComponent implements OnInit {
 
   ngOnInit() {
   }
-  public addProduct(): void {
+  public addProduct(name: HTMLInputElement, price: HTMLInputElement, photo: HTMLInputElement): void {
     console.log(this.newProduct);
+    console.log(name.value);
+    console.log(price.value);
+    console.log(photo.value);
   }
 
 

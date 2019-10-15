@@ -1,12 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductService }  from './product.service';
-
-
-export interface Product {
-    name: string;
-    price: number;
-    photo: string;
-}
 
 
 @Component({
@@ -15,29 +7,12 @@ export interface Product {
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  public productList: Array<Product> = [];
-  public selectedProduct: Product = null;
+  
+  constructor() { }
 
+  ngOnInit() { }
 
-
-
-  constructor(
-    private productService: ProductService
-    ) { }
-
-  ngOnInit(): void {
-    this.productService.getProducts().subscribe(
-      (data: Product[]) => {
-        this.productList = data;
-      }
-    );
+  public log(event): void {
+    console.log(event)
   }
-
-  public selectProduct(product: Product): void {
-    this.selectedProduct = product;
-  }
-
-
-
-
-}
+ }
