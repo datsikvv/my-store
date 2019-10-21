@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  
-  constructor() { }
 
-  ngOnInit() { }
+
+  
+  constructor( ) { }
+
+  ngOnInit() { 
+    
+  }
 
   public log(event): void {
     console.log(event)

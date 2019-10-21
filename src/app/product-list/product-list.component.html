@@ -1,5 +1,5 @@
 <h1>Cats For Sale</h1>
-<!-- <div class="show">
+<div class="show">
     <img class="show-photo"  src="{{selectedProduct?.photo}}" (click)="selectProduct(null)">
 </div>
 <div class="wrap">  
@@ -10,6 +10,6 @@
         <button type="button" class="btn btn-success" (click)="selectProduct(product)">Buy</button>
         <button type="button" class="btn btn-success">View</button>
     </div>
-</div> -->
+</div> 
 
 <app-item (itemData)="log($event)" [photo]="'product.photo'" [name]="'product.name'" [price]="'product.price'"></app-item>

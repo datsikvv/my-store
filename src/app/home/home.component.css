@@ -1,6 +1,7 @@
-body {
-    background-color: rgb(197, 124, 13);
-}
 .welcome {
     font-size: 40px;
+}
+
+.wrapp {
+    margin: 15px;
 }

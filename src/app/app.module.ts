@@ -13,7 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { NavigateComponent } from './navigate/navigate.component';
 import { BasketComponent } from './basket/basket.component';
 import { ItemComponent } from './product-list/item/item.component';
-import { ViewProductComponent } from './view-product/view-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewProductComponent } from './product-list/item/view-product/view-product.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,14 @@ import { ViewProductComponent } from './view-product/view-product.component';
       {path: 'product', component: ProductListComponent},
       {path: 'form', component: AddProductComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'view', component: ViewProductComponent}
+      {path: 'view/:id', component: ViewProductComponent}
       // {path: 'test-style', component: TestStyleComponent},
       // {path: 'input', component: InputOutputComponent},
       // {path: 'view', component: BlockHostComponent},
       // {path: 'binding', component: DataBindingComponent}
     ]),
-    FormsModule 
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

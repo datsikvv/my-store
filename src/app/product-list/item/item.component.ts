@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ProductService }  from '../product.service';
+import { Router } from '@angular/router';
 
 export interface Product {
   name: string;
@@ -31,7 +32,8 @@ export class ItemComponent implements OnInit {
   @Output() public itemData: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -50,8 +52,8 @@ export class ItemComponent implements OnInit {
     this.itemData.emit(this.selectedProduct);
   }
 
-  public getView(product: Product): void {
-    this.selectedProduct = product;
+  public getView(id: number): void {
+    this.router.navigate(['/view/', id]);
   }
 
 }
